@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Roboto:wght@400;500&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <title>Title</title>
+</head>
+
+<div class="header">
+  <div class="header__container">
+    <div class="header__block">
+      <div class="left">
+        <a href="#" class="logo">ProFiler.io</a>
+        <ul class="header__nav">
+          <li><a th:href="@{'/profile'}">Home</a></li>
+          <li><a th:href="@{'/profile'}">Forum</a></li>
+          <li><a th:href="@{'/profile'}">Help</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="image">
+          <img src="img/profile.png" alt="profile_img" width="50px" height="50px">
+        </div>
+        <div class="right__info">
+          <h2 class="profile__name" th:text="${username}"></h2>
+          <h2 class="profile__email" th:text="${email}"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span class="profile__menu-dis">
+            <ul class="profile-menu__list">
+                <li><a href="" class="menu__link">Профиль</a></li>
+                <li><a href="" class="menu__link">Настройки</a></li>
+                <li><a href="" class="menu__link" th:href="@{/home}">Выйти</a></li>
+            </ul>
+        </span>
+
+<div class="main">
+  <div class="main__container">
+    <h1>Working...</h1>
+    <img src="img/working.png" alt="" width="600px">
+  </div>
+</div>
+
+<script src="JS/index.js"></script>
+</body>
+</html>
